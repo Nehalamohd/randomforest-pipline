@@ -25,7 +25,7 @@ jobs:
               run: src/train.py
 
             - name: eval
-              run: src/evaluator
+              run: src/evaluator.py
             - name: test with pytest
               run: PYTHONPATH=. pytest tests/test.py
     build_run:

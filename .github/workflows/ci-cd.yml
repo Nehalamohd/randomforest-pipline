@@ -27,7 +27,7 @@ jobs:
             - name: eval
               run: src/evaluator.py
             - name: test with pytest
-              run: PYTHONPATH=. pytest tests/test.py
+              run: PYTHONPATH=. pytest src/tests/test.py
     build_run:
         name: build
         runs-on: windows-latest

@@ -27,7 +27,7 @@ jobs:
             - name: eval
               run: src/evaluator.py
             - name: test with pytest
-              run: tests/test.py
+              run: pytest -q
     build_run:
         name: build
         runs-on: windows-latest
